@@ -1,23 +1,32 @@
-people = 30
-cars = 40
-buses = 15
+print ("You enter a dark room with two doors. Do you go through door #1 or door #2?")
 
-if cars > people:
-    print("We should take cars.")
-elif cars < people:
-    print("We should not take cars.")
+door = input("> ")
+
+if door == "1":
+    print("There's a giant bear here eating a cheese cake. What do you do?")
+    print("1.Take the cake.")
+    print("2.Scream at the bear.")
+
+    bear = input("> ")
+
+    if bear == "1":
+        print ("The bear eats your face off. Good job!")
+    elif bear == "2":
+        print("The bear eats your legs off. Good job!")
+    else:
+        print("Well, doing %s is probably better. Bear runs away.")%bear
+
+elif door == "2":
+    print("You stare into the endless abyss at Cthulhu's retina.")
+    print("1.Blueberries.")
+    print("2.Yellow facket clothespins.")
+    print("3.Understanding revovers yelling melodied.")
+
+    insanity = input(">")
+
+    if insanity == "1" or insanity == "2":
+        print("Your body survives powered by a m1ind of jello. Good job!")
+    else:
+        print("The instanity rots your eyes into a pool of muck. Good job!")
 else:
-    print("We can't decide.")
-
-if buses > cars:
-    print("That's too many buses.")
-elif buses < cars:
-    print ("Maybe we could take buses.")
-else:
-    print ("We still can't decide.")
-
-
-if people > buses:
-    print("Alright, Let's just take the buses.")
-else:
-    print("Fine, let's stay home then.")
+    print("You stumble around and fall on a knife and die. Good job!")
